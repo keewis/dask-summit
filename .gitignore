@@ -1,0 +1,12 @@
+# editor save files
+*~
+\#*#
+
+# ipython cache
+/.ipynb_checkpoints
+
+# python object files
+*.py[co]
+
+# egg files
+/.eggs

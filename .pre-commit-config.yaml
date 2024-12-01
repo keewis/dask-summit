@@ -36,7 +36,8 @@ repos:
     rev: 0.8.0
     hooks:
       - id: nbstripout
-        args: [--extra-keys=metadata.kernelspec metadata.langauge_info.version]
+        args: ["--extra-keys=metadata.kernelspec metadata.langauge_info.version"]
+
 
 -   repo: https://github.com/myint/rstcheck
     rev: 3f92957478422df87bd730abde66f089cc1ee19b

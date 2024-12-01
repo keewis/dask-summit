@@ -18,20 +18,11 @@ repos:
     hooks:
     - id: black-jupyter
 
--   repo: https://gitlab.com/pycqa/flake8
-    rev: 3.9.1
+-   repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.7.2
     hooks:
-    - id: flake8
-
--   repo: https://github.com/asottile/seed-isort-config
-    rev: v2.2.0
-    hooks:
-    - id: seed-isort-config
-
--   repo: https://github.com/pycqa/isort
-    rev: 5.8.0
-    hooks:
-    - id: isort
+      - id: ruff
+        args: ["--fix", "--show-fixes"]
 
 -   repo: https://github.com/deathbeds/prenotebook
     rev: f5bdb72a400f1a56fe88109936c83aa12cc349fa

@@ -1,19 +1,18 @@
 repos:
-
--   repo: https://github.com/pre-commit/pre-commit-hooks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
-    - id: trailing-whitespace
-    - id: end-of-file-fixer
-    - id: check-docstring-first
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-docstring-first
 
--   repo: https://github.com/rbubley/mirrors-prettier
+  - repo: https://github.com/rbubley/mirrors-prettier
     rev: v3.4.1
     hooks:
-        - id: prettier
-          args: ["--cache-location=.prettier_cache/cache"]
+      - id: prettier
+        args: ["--cache-location=.prettier_cache/cache"]
 
--   repo: https://github.com/ComPWA/taplo-pre-commit
+  - repo: https://github.com/ComPWA/taplo-pre-commit
     rev: v0.9.3
     hooks:
       - id: taplo-format
@@ -21,25 +20,25 @@ repos:
       - id: taplo-lint
         args: ["--no-schema"]
 
--   repo: https://github.com/psf/black-pre-commit-mirror
+  - repo: https://github.com/psf/black-pre-commit-mirror
     rev: 24.10.0
     hooks:
-    - id: black-jupyter
+      - id: black-jupyter
 
--   repo: https://github.com/astral-sh/ruff-pre-commit
+  - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.8.1
     hooks:
       - id: ruff
         args: ["--fix", "--show-fixes"]
 
--   repo: https://github.com/kynan/nbstripout
+  - repo: https://github.com/kynan/nbstripout
     rev: 0.8.1
     hooks:
       - id: nbstripout
-        args: ["--extra-keys=metadata.kernelspec metadata.langauge_info.version"]
+        args:
+          ["--extra-keys=metadata.kernelspec metadata.langauge_info.version"]
 
-
--   repo: https://github.com/myint/rstcheck
+  - repo: https://github.com/myint/rstcheck
     rev: v6.2.4
     hooks:
-    -   id: rstcheck
+      - id: rstcheck

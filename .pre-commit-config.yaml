@@ -24,10 +24,11 @@ repos:
       - id: ruff
         args: ["--fix", "--show-fixes"]
 
--   repo: https://github.com/deathbeds/prenotebook
-    rev: f5bdb72a400f1a56fe88109936c83aa12cc349fa
+-   repo: https://github.com/kynan/nbstripout
+    rev: 0.8.0
     hooks:
-    - id: prenotebook
+      - id: nbstripout
+        args: [--extra-keys=metadata.kernelspec metadata.langauge_info.version]
 
 -   repo: https://github.com/myint/rstcheck
     rev: 3f92957478422df87bd730abde66f089cc1ee19b

@@ -3,7 +3,7 @@
 \#*#
 
 # ipython cache
-/.ipynb_checkpoints
+.ipynb_checkpoints
 
 # python object files
 *.py[co]
